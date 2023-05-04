@@ -2,11 +2,14 @@ package com.cydeo.mentor.entity;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 @Data
-public class State {
+@Entity
+@Table(name = "state")
+public class State extends BaseEntity{
 
-
-    private Long id;
     private String stateCode;
     private String stateName;
 }
